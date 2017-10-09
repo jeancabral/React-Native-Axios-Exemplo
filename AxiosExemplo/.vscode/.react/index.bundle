@@ -58010,7 +58010,7 @@ var _index = require(160                                              ); // 160 
 
 var _index2 = _interopRequireDefault(_index);
 
-var _jsxFileName = 'd:\\Projetos\\React-Native-Axios-Exemplo\\AxiosExemplo\\App.js';
+var _jsxFileName = "d:\\Projetos\\React-Native-Axios-Exemplo\\AxiosExemplo\\App.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -58030,12 +58030,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var _components = {
   App: {
-    displayName: 'App'
+    displayName: "App"
   }
 };
 
 var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
-  filename: 'd:/Projetos/React-Native-Axios-Exemplo/AxiosExemplo/App.js',
+  filename: "d:/Projetos/React-Native-Axios-Exemplo/AxiosExemplo/App.js",
   components: _components,
   locals: [module],
   imports: [_react3.default]
@@ -58047,57 +58047,42 @@ function _wrapComponent(id) {
   };
 }
 
-var App = _wrapComponent('App')(function (_Component) {
+var App = _wrapComponent("App")(function (_Component) {
   _inherits(App, _Component);
 
-  function App(props) {
+  function App() {
     _classCallCheck(this, App);
 
-    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-
-    console.debug("Construindo a aplicação");
-    return _this;
+    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
   }
 
   _createClass(App, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      console.debug("Fazendo alguma coisa antes de renderizar");
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      console.debug("Fazendo alguma coisa DEPOIS de renderizar");
-    }
-  }, {
-    key: 'render',
+    key: "render",
     value: function render() {
-      var exemplo = "Exemplo para aparecer no Console";
-      console.debug(exemplo);
       return _react3.default.createElement(
         _reactNative.View,
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 26
+            lineNumber: 8
           }
         },
         _react3.default.createElement(_ListaItens2.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 27
+            lineNumber: 9
           }
         }),
         _react3.default.createElement(_ListaItens2.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28
+            lineNumber: 10
           }
         }),
         _react3.default.createElement(_ListaItens2.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 11
           }
         })
       );
@@ -58121,7 +58106,103 @@ var _index = require(160                                                    ); /
 
 var _index2 = _interopRequireDefault(_index);
 
-var _jsxFileName = 'd:\\Projetos\\React-Native-Axios-Exemplo\\AxiosExemplo\\src\\components\\ListaItens.js';
+var _jsxFileName = "d:\\Projetos\\React-Native-Axios-Exemplo\\AxiosExemplo\\src\\components\\ListaItens.js";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactNative = require(12            ); // 12 = react-native
+
+var _Itens = require(491      ); // 491 = ./Itens
+
+var _Itens2 = _interopRequireDefault(_Itens);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  ListaItens: {
+    displayName: "ListaItens"
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: "d:/Projetos/React-Native-Axios-Exemplo/AxiosExemplo/src/components/ListaItens.js",
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var ListaItens = _wrapComponent("ListaItens")(function (_Component) {
+  _inherits(ListaItens, _Component);
+
+  function ListaItens() {
+    _classCallCheck(this, ListaItens);
+
+    return _possibleConstructorReturn(this, (ListaItens.__proto__ || Object.getPrototypeOf(ListaItens)).apply(this, arguments));
+  }
+
+  _createClass(ListaItens, [{
+    key: "render",
+    value: function render() {
+      return _react3.default.createElement(
+        _reactNative.View,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 8
+          }
+        },
+        _react3.default.createElement(_Itens2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9
+          }
+        }),
+        _react3.default.createElement(_Itens2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10
+          }
+        }),
+        _react3.default.createElement(_Itens2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11
+          }
+        })
+      );
+    }
+  }]);
+
+  return ListaItens;
+}(_react2.Component));
+
+exports.default = ListaItens;
+}, 490, null, "AxiosExemplo/src/components/ListaItens.js");
+__d(/* AxiosExemplo/src/components/Itens.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require(36     ); // 36 = react
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require(160                                                    ); // 160 = ./../../node_modules/react-transform-hmr/lib/index.js
+
+var _index2 = _interopRequireDefault(_index);
+
+var _jsxFileName = "d:\\Projetos\\React-Native-Axios-Exemplo\\AxiosExemplo\\src\\components\\Itens.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -58136,13 +58217,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var _components = {
-  ListaItens: {
-    displayName: 'ListaItens'
+  Itens: {
+    displayName: "Itens"
   }
 };
 
 var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
-  filename: 'd:/Projetos/React-Native-Axios-Exemplo/AxiosExemplo/src/components/ListaItens.js',
+  filename: "d:/Projetos/React-Native-Axios-Exemplo/AxiosExemplo/src/components/Itens.js",
   components: _components,
   locals: [module],
   imports: [_react3.default]
@@ -58154,36 +58235,45 @@ function _wrapComponent(id) {
   };
 }
 
-var ListaItens = _wrapComponent('ListaItens')(function (_Component) {
-  _inherits(ListaItens, _Component);
+var Itens = _wrapComponent("Itens")(function (_Component) {
+  _inherits(Itens, _Component);
 
-  function ListaItens() {
-    _classCallCheck(this, ListaItens);
+  function Itens() {
+    _classCallCheck(this, Itens);
 
-    return _possibleConstructorReturn(this, (ListaItens.__proto__ || Object.getPrototypeOf(ListaItens)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Itens.__proto__ || Object.getPrototypeOf(Itens)).apply(this, arguments));
   }
 
-  _createClass(ListaItens, [{
-    key: 'render',
+  _createClass(Itens, [{
+    key: "render",
     value: function render() {
       return _react3.default.createElement(
-        _reactNative.Text,
+        _reactNative.View,
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 9
+            lineNumber: 7
           }
         },
-        'Item'
+        _react3.default.createElement(
+          _reactNative.Text,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 8
+            }
+          },
+          "Detalhes do Item..."
+        )
       );
     }
   }]);
 
-  return ListaItens;
+  return Itens;
 }(_react2.Component));
 
-exports.default = ListaItens;
-}, 490, null, "AxiosExemplo/src/components/ListaItens.js");
+exports.default = Itens;
+}, 491, null, "AxiosExemplo/src/components/Itens.js");
 ;require(55);
 ;require(0);
 //# sourceMappingURL=index.map
