@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ScrollView } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
 import axios from "axios";
 
 import Itens from "./Itens";
@@ -15,6 +15,7 @@ export default class ListaItens extends Component {
 
 
   componentWillMount() {
+    console.log('eu me amo');
     //Requisição HTTP
     axios.get('http://faus.com.br/recursos/c/dmairr/api/itens.html')
       //.then(response => { console.log(response); })
@@ -25,9 +26,17 @@ export default class ListaItens extends Component {
 
   render() {
     return (
-      <ScrollView style={{paddingTop:40, margin:10}}>
+      <ScrollView style={estilo.container}>
         {this.state.listaItens.map(item => (<Itens key={item.titulo} item={item} />))}
       </ScrollView>
     );
   }
 }
+
+const estilo = StyleSheet.create({
+  container: {
+    paddingTop: 20,
+    backgroundColor: '#DDD'
+  }
+
+});
